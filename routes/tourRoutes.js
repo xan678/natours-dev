@@ -5,6 +5,10 @@ const router = express.Router();
 
 //Making Parameter middleware
 // router.param('id', tourController.checkID);
+
+router.route('/getAggregates').get(tourController.getTourStats);
+router.route('/monthly-plan/:year').get(tourController.getMonthlyPlan);
+
 router
   .route('/top-5-cheap')
   .get(tourController.aliasTopTours, tourController.getAllTours);
