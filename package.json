@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "debug" : "ndb server.js"
   },
   "author": "Ankush Ojha",
   "license": "ISC",
@@ -27,6 +28,7 @@
     "validator": "^13.7.0"
   },
   "devDependencies": {
+    "ndb": "^1.1.5",
     "nodemon": "^2.0.15"
   },
   "engines": {
